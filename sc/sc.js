@@ -41,9 +41,9 @@ async function SubmitToken() {
     }
 
     tag.textContent = response.username + "#" + response.discriminator;
-    email.textContent = response.email ? response.email : "no email";
-    ver.textContent = response.verified ? "verified" : "not verified";
-    tel.textContent = response.phone ? response.phone : "no phone";
+    email.textContent = response.email ? response.email : "Email yok";
+    ver.textContent = response.verified ? "doğrulandı" : "Doğrulanmadı";
+    tel.textContent = response.phone ? response.phone : "telefon yok";
     id.textContent = response.id;
     loc.textContent = response.locale;
 
