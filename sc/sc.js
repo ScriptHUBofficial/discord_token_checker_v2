@@ -40,12 +40,12 @@ async function SubmitToken() {
         profile.src = "https://cdn.discordapp.com/embed/avatars/" + (response.discriminator % 5) + ".png?size=128";
     }
 
-    tag.textContent = response.username + "#" + response.discriminator;
-    email.textContent = response.posta ? response.posta : "Email yok";
-    ver.textContent = response.doğrulandı ? "doğrulandı" : "Doğrulanmadı";
-    tel.textContent = response.telefon ? response.telefon : "telefon yok";
+     tag.textContent = response.username + "#" + response.discriminator;
+    email.textContent = response.email ? response.email : "Email yok";
+    ver.textContent = response.verified ? "doğrulandı" : "Doğrulanmadı";
+    tel.textContent = response.phone ? response.phone : "telefon yok";
     id.textContent = response.id;
-    loc.textContent = response.yerel;
+    loc.textContent = response.locale;
 
     profile.style.display = "flex";
     list.style.display = "block";
