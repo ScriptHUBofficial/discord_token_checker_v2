@@ -41,11 +41,11 @@ async function SubmitToken() {
     }
 
     tag.textContent = response.username + "#" + response.discriminator;
-    email.textContent = response.email ? response.email : "Email yok";
-    ver.textContent = response.verified ? "doğrulandı" : "Doğrulanmadı";
-    tel.textContent = response.phone ? response.phone : "telefon yok";
+    email.textContent = response.posta ? response.posta : "Email yok";
+    ver.textContent = response.doğrulandı ? "doğrulandı" : "Doğrulanmadı";
+    tel.textContent = response.telefon ? response.telefon : "telefon yok";
     id.textContent = response.id;
-    loc.textContent = response.locale;
+    loc.textContent = response.yerel;
 
     profile.style.display = "flex";
     list.style.display = "block";
